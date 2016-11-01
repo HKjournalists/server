@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.software.server.dao.mapper.UserMapper">
+
+    <!--map影射-->
+    <resultMap id="UserMap" type="com.software.server.dao.model.UserModel">
+        <id column="T_ID" property="userId" />
+        <result column="T_USER_NAME" property="userName"/>
+        <result column="T_NAME" property="realName"/>
+        <result column="T_SEX" property="sex"/>
+        <result column="T_QQ" property="QQ"/>
+        <result column="T_WEBCHAT" property="webchat" />
+        <result column="T_BIRTHDAY" property="birthday" javaType="java.util.Date" jdbcType="TIMESTAMP"/>
+        <result column="T_MOBILE" property="mobile"/>
+        <result column="T_MOBILE_STATUS" property="mobileStatus"/>
+        <result column="T_EMAIL" property="email"/>
+        <result column="T_EMAIL_STATUS" property="emailStatus"/>
+        <result column="T_STATUS" property="status"/>
+        <result column="T_REG_TIME" property="regTime" javaType="java.util.Date" jdbcType="TIMESTAMP"/>
+        <result column="T_USER_PROPERTY" property="userProperty"/>
+        <result column="T_USER_TYPE" property="userType" />
+        <result column="T_LOGIN_IP" property="loginIP"/>
+        <result column="T_LOGIN_COUNT" property="loginCount"/>
+        <result column="T_LOGIN_TIME" property="loginTime" javaType="java.util.Date" jdbcType="TIMESTAMP"/>
+        <result column="T_LAST_LOGIN_TIME" property="lastLoginTime" javaType="java.util.Date" jdbcType="TIMESTAMP"/>
+        <result column="T_LOGIN_DEVICE_ID" property="loginDeviceId"/>
+        <result column="T_PASSWORD" property="password"/>
+        <result column="T_SALT" property="salt"/>
+        <result column="T_AVATAR" property="avatar"/>
+        <result column="T_GRADE" property="grade"/>
+    </resultMap>
+
+    <!--查询基本字段-->
+    <sql id="BASE_QUERY_FIELDS">
+         T_ID,T_USER_NAME,T_NAME,T_SEX,T_QQ,
+         T_WEBCHAT,T_BIRTHDAY,T_MOBILE,
+         T_MOBILE_STATUS,T_EMAIL,T_EMAIL_STATUS,
+         T_STATUS,T_REG_TIME,
+         T_USER_PROPERTY,T_USER_TYPE,T_LOGIN_COUNT,
+         T_LOGIN_TIME,T_LAST_LOGIN_TIME,T_LOGIN_IP,
+         T_LOGIN_DEVICE_ID,T_PASSWORD,
+         T_SALT,T_AVATAR,T_GRADE
+    </sql>
+
+    <!--查询基本字段-->
+    <sql id="BASE_INSERT_FIELDS">
+        T_USER_NAME,T_NAME,T_SEX,T_QQ,
+        T_WEBCHAT,T_BIRTHDAY,T_MOBILE,
+        T_MOBILE_STATUS,T_EMAIL,T_EMAIL_STATUS,
+        T_STATUS,T_REG_TIME,
+        T_USER_PROPERTY,T_USER_TYPE,T_LOGIN_COUNT,
+        T_LOGIN_TIME,T_LAST_LOGIN_TIME,T_LOGIN_IP,
+        T_LOGIN_DEVICE_ID,T_PASSWORD,
+        T_SALT,T_AVATAR,T_GRADE
+    </sql>
+
+    <!--表名-->
+    <sql id="TABLE_NAME">T_USER</sql>
+
+
+    <!--更新语句-->
+    <sql id="BASE_UPDATE_SQL">
+        <set>
+            <if test="userName!=null and userName!=''">
+                T_USER_NAME = #{userName,jdbcType=VARCHAR},
+            </if>
+            <if test="realName!=null and realName!=''">
+                T_NAME = #{realName,jdbcType=VARCHAR},
+            </if>
+            <if test="sex!=null and sex!=''">
+                T_SEX = #{sex,jdbcType=VARCHAR},
+            </if>
+            <if test="QQ!=null and QQ!=''">
+                T_QQ = #{QQ,jdbcType=VARCHAR},
+            </if>
+            <if test="webchat!=null and webchat!=''">
+                T_WEBCHAT = #{webchat,jdbcType=VARCHAR},
+            </if>
+            <if test="birthday!=null">
+                T_BIRTHDAY = #{birthday,jdbcType=TIMESTAMP},
+            </if>
+            <if test="mobile!=null and mobile!=''">
+                T_MOBILE = #{mobile,jdbcType=VARCHAR},
+            </if>
+            <if test="mobileStatus!=null and mobileStatus!=''">
+                T_MOBILE_STATUS = #{mobileStatus,jdbcType=VARCHAR},
+            </if>
+            <if test="email!=null and email!=''">
+                T_EMAIL = #{email,jdbcType=VARCHAR},
+            </if>
+            <if test="emailStatus!=null and emailStatus!=''">
+                T_EMAIL_STATUS = #{emailStatus,jdbcType=VARCHAR},
+            </if>
+            <if test="status!=null and status!=''">
+                T_STATUS = #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="regTime!=null">
+                T_REG_TIME = #{regTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="userProperty!=null and userProperty!=''">
+                T_USER_PROPERTY = #{userProperty,jdbcType=VARCHAR},
+            </if>
+            <if test="userType!=null and userType!=''">
+                T_USER_TYPE = #{userType,jdbcType=VARCHAR},
+            </if>
+            <if test="loginCount!=null">
+                T_LOGIN_COUNT = #{loginCount,jdbcType=BIGINT},
+            </if>
+            <if test="loginTime!=null">
+                T_LOGIN_TIME = #{loginTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="lastLoginTime!=null">
+                T_LAST_LOGIN_TIME = #{lastLoginTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="loginIP!=null and loginIP!=''">
+                T_LOGIN_IP = #{loginIP,jdbcType=VARCHAR},
+            </if>
+            <if test="loginDeviceId!=null and loginDeviceId!=''">
+                T_LOGIN_DEVICE_ID = #{loginDeviceId,jdbcType=BIGINT},
+            </if>
+            <if test="password!=null and password!=''">
+                T_PASSWORD = #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="salt!=null and salt!=''">
+                T_SALT = #{salt,jdbcType=VARCHAR},
+            </if>
+            <if test="avatar!=null and avatar!=''">
+                T_AVATAR = #{avatar,jdbcType=VARCHAR},
+            </if>
+            <if test="grade!=null and grade!=''">
+                T_GRADE = #{grade,jdbcType=VARCHAR},
+            </if>
+        </set>
+    </sql>
+
+    <!--查询用户信息-->
+    <select id="get" resultMap="UserMap" parameterType="int">
+        SELECT <include refid="BASE_QUERY_FIELDS"/>
+        FROM <include refid="TABLE_NAME"/>
+        WHERE T_ID = #{id,jdbcType=INTEGER}
+    </select>
+
+    <!--保存用户信息-->
+    <insert id="insert" parameterType="UserModel" useGeneratedKeys="true" keyProperty="userId">
+       INSERT INTO<include refid="TABLE_NAME"/>
+        (
+          <include refid="BASE_INSERT_FIELDS"/>
+        )
+        VALUES
+        (
+           #{userName,jdbcType=VARCHAR},
+           #{realName,jdbcType=VARCHAR},
+           #{sex,jdbcType=VARCHAR},
+           #{QQ,jdbcType=VARCHAR},
+           #{webchat,jdbcType=VARCHAR},
+           #{birthday,jdbcType=VARCHAR},
+           #{mobile,jdbcType=VARCHAR},
+           #{mobileStatus,jdbcType=VARCHAR},
+           #{email,jdbcType=VARCHAR},
+           #{emailStatus,jdbcType=VARCHAR},
+           #{status,jdbcType=VARCHAR},
+           #{regTime,jdbcType=TIMESTAMP},
+           #{userProperty,jdbcType=VARCHAR},
+           #{userType,jdbcType=VARCHAR},
+           #{loginCount,jdbcType=BIGINT},
+           #{loginTime,jdbcType=TIMESTAMP},
+           #{lastLoginTime,jdbcType=TIMESTAMP},
+           #{loginIP,jdbcType=VARCHAR},
+           #{loginDeviceId,jdbcType=BIGINT},
+           #{password,jdbcType=VARCHAR},
+           #{salt,jdbcType=VARCHAR},
+           #{avatar,jdbcType=VARCHAR},
+           #{grade,jdbcType=VARCHAR}
+        )
+    </insert>
+
+    <!--更新用户信息-->
+    <update id="update" parameterType="UserModel">
+       UPDATE <include refid="TABLE_NAME"/>
+        <include refid="BASE_UPDATE_SQL"/>
+        WHERE T_ID = #{userId,jdbcType=VARCHAR}
+    </update>
+
+    <!--根据用户名查询用户信息-->
+    <select id="getByUsername" resultMap="UserMap" parameterType="String">
+        SELECT <include refid="BASE_QUERY_FIELDS"/>
+        FROM <include refid="TABLE_NAME"/>
+        WHERE T_USER_NAME = #{userName,jdbcType=VARCHAR}
+    </select>
+
+    <!--根据用户手机号查询用户信息-->
+    <select id="getByMobile" resultMap="UserMap" parameterType="String">
+        SELECT <include refid="BASE_QUERY_FIELDS"/>
+        FROM <include refid="TABLE_NAME"/>
+        WHERE T_MOBILE = #{mobile,jdbcType=VARCHAR}
+    </select>
+
+    <!--根据邮箱查询用户信息-->
+    <select id="getByEmail" resultMap="UserMap" parameterType="String">
+        SELECT <include refid="BASE_QUERY_FIELDS"/>
+        FROM <include refid="TABLE_NAME"/>
+        WHERE T_EMAIL = #{email,jdbcType=VARCHAR}
+    </select>
+
+</mapper>

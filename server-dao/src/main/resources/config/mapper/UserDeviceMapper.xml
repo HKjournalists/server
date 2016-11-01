@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.software.server.dao.mapper.UserDeviceMapper">
+
+    <!--map影射-->
+    <resultMap id="UserDeviceMap" type="com.software.server.dao.model.UserDeviceModel">
+        <id column="T_ID" property="userId" />
+        <result column="T_USER_ID" property="userId"/>
+        <result column="T_DEVICE_INFO" property="deviceInfo"/>
+        <result column="T_DEVICE_SYS_VERSION" property="deviceSysVersion"/>
+        <result column="T_SCREEN_WIDTH" property="screenWidth"/>
+        <result column="T_SCREEN_HEIGHT" property="screenHeight" />
+        <result column="T_UUID" property="uuid"/>
+        <result column="T_NET_TYPE" property="netType"/>
+        <result column="T_DENSITY" property="density"/>
+        <result column="T_DEVICE_SYS_TYPE" property="deviceSysType"/>
+    </resultMap>
+
+    <!--查询基本字段-->
+    <sql id="BASE_QUERY_FIELDS">
+         T_ID,
+         T_USER_ID,
+         T_DEVICE_INFO,
+         T_DEVICE_SYS_VERSION,
+         T_SCREEN_WIDTH,
+         T_SCREEN_HEIGHT,
+         T_UUID,
+         T_NET_TYPE,
+         T_DENSITY,
+         T_DEVICE_SYS_TYPE
+    </sql>
+
+    <!--查询基本字段-->
+    <sql id="BASE_INSERT_FIELDS">
+         T_USER_ID,
+         T_DEVICE_INFO,
+         T_DEVICE_SYS_VERSION,
+         T_SCREEN_WIDTH,
+         T_SCREEN_HEIGHT,
+         T_UUID,
+         T_NET_TYPE,
+         T_DENSITY,
+         T_DEVICE_SYS_TYPE
+    </sql>
+
+    <!--表名-->
+    <sql id="TABLE_NAME">T_USER_DEVICE</sql>
+
+
+    <!--更新语句-->
+    <sql id="BASE_UPDATE_SQL">
+        <set>
+            <if test="userId!=null">
+                T_USER_ID = #{userId,jdbcType=VARCHAR},
+            </if>
+            <if test="deviceInfo!=null and deviceInfo!=''">
+                T_DEVICE_INFO = #{deviceInfo,jdbcType=VARCHAR},
+            </if>
+            <if test="deviceSysVersion!=null and deviceSysVersion!=''">
+                T_DEVICE_SYS_VERSION = #{deviceSysVersion,jdbcType=VARCHAR},
+            </if>
+            <if test="screenWidth!=null and screenWidth!=''">
+                T_SCREEN_WIDTH = #{screenWidth,jdbcType=VARCHAR},
+            </if>
+            <if test="screenHeight!=null and screenHeight!=''">
+                T_SCREEN_HEIGHT = #{screenHeight,jdbcType=VARCHAR},
+            </if>
+            <if test="uuid!=null and uuid!=''">
+                T_UUID = #{uuid,jdbcType=TIMESTAMP},
+            </if>
+            <if test="netType!=null and netType!=''">
+                T_NET_TYPE = #{netType,jdbcType=VARCHAR},
+            </if>
+            <if test="density!=null and density!=''">
+                T_DENSITY = #{density,jdbcType=VARCHAR},
+            </if>
+            <if test="deviceSysType!=null and deviceSysType!=''">
+                T_DEVICE_SYS_TYPE = #{deviceSysType,jdbcType=VARCHAR},
+            </if>
+        </set>
+    </sql>
+
+    <!--查询用户登录信息-->
+    <select id="get" resultMap="UserDeviceMap" parameterType="int">
+        SELECT <include refid="BASE_QUERY_FIELDS"/>
+        FROM <include refid="TABLE_NAME"/>
+        WHERE T_ID = #{id,jdbcType=BIGINT}
+    </select>
+
+    <!--保存用户信息-->
+    <insert id="insert" parameterType="UserDeviceModel" useGeneratedKeys="true" keyProperty="userId">
+       INSERT INTO<include refid="TABLE_NAME"/>
+        (
+          <include refid="BASE_INSERT_FIELDS"/>
+        )
+        VALUES
+        (
+           #{userId,jdbcType=BIGINT},
+           #{deviceInfo,jdbcType=VARCHAR},
+           #{deviceSysVersion,jdbcType=VARCHAR},
+           #{screenWidth,jdbcType=VARCHAR},
+           #{screenHeight,jdbcType=VARCHAR},
+           #{uuid,jdbcType=VARCHAR},
+           #{netType,jdbcType=VARCHAR},
+           #{density,jdbcType=VARCHAR},
+           #{deviceSysType,jdbcType=VARCHAR}
+        )
+    </insert>
+
+    <!--更新用户设备信息-->
+    <update id="update" parameterType="UserDeviceModel">
+       UPDATE <include refid="TABLE_NAME"/>
+        <include refid="BASE_UPDATE_SQL"/>
+        WHERE T_ID = #{id,jdbcType=VARCHAR}
+    </update>
+
+
+    <!--根据用户ID查询用户登录信息-->
+    <select id="getByUserId" resultMap="UserDeviceMap" parameterType="String">
+        SELECT <include refid="BASE_QUERY_FIELDS"/>
+        FROM <include refid="TABLE_NAME"/>
+        WHERE T_USER_ID = #{userId,jdbcType=BIGINT}
+    </select>
+
+</mapper>

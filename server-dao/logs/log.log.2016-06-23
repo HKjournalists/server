@@ -1,0 +1,524 @@
+2016-06-23 10:24:30 [ main:1 ] - [ DEBUG ] SpringJUnit4ClassRunner constructor called with [class com.software.server.dao.UserDaoTest]
+2016-06-23 10:24:30 [ main:19 ] - [ DEBUG ] Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2016-06-23 10:24:30 [ main:33 ] - [ DEBUG ] Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2016-06-23 10:24:30 [ main:55 ] - [ DEBUG ] Instantiating TestContextBootstrapper for test class [com.software.server.dao.UserDaoTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+2016-06-23 10:24:30 [ main:125 ] - [ DEBUG ] Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@65067a13 declaringClass = 'com.software.server.dao.BaseTest', classes = '{class com.software.server.dao.base.DaoConfig}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2016-06-23 10:24:30 [ main:130 ] - [ DEBUG ] Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.software.server.dao.UserDaoTest]
+2016-06-23 10:24:30 [ main:141 ] - [ DEBUG ] @TestExecutionListeners is not present for class [com.software.server.dao.UserDaoTest]: using defaults.
+2016-06-23 10:24:30 [ main:160 ] - [ INFO ] Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-06-23 10:24:30 [ main:189 ] - [ INFO ] Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+2016-06-23 10:24:30 [ main:200 ] - [ INFO ] Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5cc75d38, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@24b9371e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7bd1a567, org.springframework.test.context.transaction.TransactionalTestExecutionListener@c24cb3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@54397c28]
+2016-06-23 10:24:30 [ main:207 ] - [ DEBUG ] Retrieved @ProfileValueSourceConfiguration [null] for test class [com.software.server.dao.UserDaoTest]
+2016-06-23 10:24:30 [ main:209 ] - [ DEBUG ] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.software.server.dao.UserDaoTest]
+2016-06-23 10:24:30 [ main:257 ] - [ DEBUG ] Retrieved @ProfileValueSourceConfiguration [null] for test class [com.software.server.dao.UserDaoTest]
+2016-06-23 10:24:30 [ main:258 ] - [ DEBUG ] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.software.server.dao.UserDaoTest]
+2016-06-23 10:24:30 [ main:263 ] - [ DEBUG ] Retrieved @ProfileValueSourceConfiguration [null] for test class [com.software.server.dao.UserDaoTest]
+2016-06-23 10:24:30 [ main:266 ] - [ DEBUG ] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.software.server.dao.UserDaoTest]
+2016-06-23 10:24:30 [ main:269 ] - [ DEBUG ] Retrieved @ProfileValueSourceConfiguration [null] for test class [com.software.server.dao.UserDaoTest]
+2016-06-23 10:24:30 [ main:270 ] - [ DEBUG ] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.software.server.dao.UserDaoTest]
+2016-06-23 10:24:30 [ main:290 ] - [ DEBUG ] Before test class: context [DefaultTestContext@6a8ff0ca testClass = UserDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1009946e testClass = UserDaoTest, locations = '{}', classes = '{class com.software.server.dao.base.DaoConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+2016-06-23 10:24:30 [ main:293 ] - [ DEBUG ] Retrieved @ProfileValueSourceConfiguration [null] for test class [com.software.server.dao.UserDaoTest]
+2016-06-23 10:24:30 [ main:299 ] - [ DEBUG ] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.software.server.dao.UserDaoTest]
+2016-06-23 10:24:30 [ main:311 ] - [ DEBUG ] Performing dependency injection for test context [[DefaultTestContext@6a8ff0ca testClass = UserDaoTest, testInstance = com.software.server.dao.UserDaoTest@466db468, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1009946e testClass = UserDaoTest, locations = '{}', classes = '{class com.software.server.dao.base.DaoConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+2016-06-23 10:24:30 [ main:316 ] - [ DEBUG ] Delegating to AnnotationConfigContextLoader to load context from [MergedContextConfiguration@1009946e testClass = UserDaoTest, locations = '{}', classes = '{class com.software.server.dao.base.DaoConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2016-06-23 10:24:30 [ main:320 ] - [ DEBUG ] Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@1009946e testClass = UserDaoTest, locations = '{}', classes = '{class com.software.server.dao.base.DaoConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2016-06-23 10:24:30 [ main:705 ] - [ DEBUG ] Adding [systemProperties] PropertySource with lowest search precedence
+2016-06-23 10:24:30 [ main:711 ] - [ DEBUG ] Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-06-23 10:24:30 [ main:712 ] - [ DEBUG ] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-06-23 10:24:30 [ main:713 ] - [ DEBUG ] Registering annotated classes: {class com.software.server.dao.base.DaoConfig}
+2016-06-23 10:24:31 [ main:896 ] - [ INFO ] Refreshing org.springframework.context.support.GenericApplicationContext@7dfa0e30: startup date [Thu Jun 23 10:24:31 CST 2016]; root of context hierarchy
+2016-06-23 10:24:31 [ main:897 ] - [ DEBUG ] Bean factory for org.springframework.context.support.GenericApplicationContext@7dfa0e30: org.springframework.beans.factory.support.DefaultListableBeanFactory@3edcbc7b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,daoConfig]; root of factory hierarchy
+2016-06-23 10:24:31 [ main:924 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-06-23 10:24:31 [ main:955 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-06-23 10:24:31 [ main:1011 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2016-06-23 10:24:31 [ main:1015 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-06-23 10:24:31 [ main:1086 ] - [ DEBUG ] Adding [systemProperties] PropertySource with lowest search precedence
+2016-06-23 10:24:31 [ main:1087 ] - [ DEBUG ] Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-06-23 10:24:31 [ main:1087 ] - [ DEBUG ] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-06-23 10:24:31 [ main:1098 ] - [ DEBUG ] Looking for matching resources in directory tree [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/page]
+2016-06-23 10:24:31 [ main:1098 ] - [ DEBUG ] Searching directory [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/page] for files matching pattern [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/page/**/*.class]
+2016-06-23 10:24:31 [ main:1106 ] - [ DEBUG ] Resolved location pattern [classpath*:com/software/server/dao/page/**/*.class] to resources [file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/page/UserDao.class]]
+2016-06-23 10:24:31 [ main:1185 ] - [ DEBUG ] Identified candidate component class: file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/page/UserDao.class]
+2016-06-23 10:24:31 [ main:1268 ] - [ DEBUG ] Adding [class path resource [config/database.properties]] PropertySource with lowest search precedence
+2016-06-23 10:24:31 [ main:1326 ] - [ DEBUG ] Registered bean definition for imported class 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-06-23 10:24:31 [ main:1328 ] - [ DEBUG ] Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.org.springframework.transaction.config.internalTransactionAdvisor()
+2016-06-23 10:24:31 [ main:1329 ] - [ DEBUG ] Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionAttributeSource()
+2016-06-23 10:24:31 [ main:1330 ] - [ DEBUG ] Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.transactionInterceptor()
+2016-06-23 10:24:31 [ main:1331 ] - [ DEBUG ] Registering bean definition for @Bean method org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration.org.springframework.transaction.config.internalTransactionalEventListenerFactory()
+2016-06-23 10:24:31 [ main:1335 ] - [ DEBUG ] Registered bean definition for imported class 'com.software.server.dao.base.DataSourceConfig'
+2016-06-23 10:24:31 [ main:1337 ] - [ DEBUG ] Registering bean definition for @Bean method com.software.server.dao.base.DataSourceConfig.dataSource()
+2016-06-23 10:24:31 [ main:1353 ] - [ DEBUG ] Registering bean definition for @Bean method com.software.server.dao.base.DaoConfig.propertyConfig()
+2016-06-23 10:24:31 [ main:1356 ] - [ DEBUG ] Registering bean definition for @Bean method com.software.server.dao.base.DaoConfig.sqlSessionFactory()
+2016-06-23 10:24:31 [ main:1360 ] - [ DEBUG ] Registering bean definition for @Bean method com.software.server.dao.base.DaoConfig.pageHelper()
+2016-06-23 10:24:31 [ main:1367 ] - [ DEBUG ] Registering bean definition for @Bean method com.software.server.dao.base.DaoConfig.transactionManager()
+2016-06-23 10:24:31 [ main:1373 ] - [ DEBUG ] Adding [systemProperties] PropertySource with lowest search precedence
+2016-06-23 10:24:31 [ main:1373 ] - [ DEBUG ] Adding [systemEnvironment] PropertySource with lowest search precedence
+2016-06-23 10:24:31 [ main:1374 ] - [ DEBUG ] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2016-06-23 10:24:31 [ main:1381 ] - [ DEBUG ] Looking for matching resources in directory tree [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper]
+2016-06-23 10:24:31 [ main:1382 ] - [ DEBUG ] Searching directory [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper] for files matching pattern [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/**/*.class]
+2016-06-23 10:24:31 [ main:1389 ] - [ DEBUG ] Resolved location pattern [classpath*:com/software/server/dao/mapper/**/*.class] to resources [file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/ResourceMapper.class], file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/RoleMapper.class], file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/RoleResMapper.class], file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/UserDeviceMapper.class], file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/UserLoginMapper.class], file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/UserMapper.class], file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/UserRoleMapper.class]]
+2016-06-23 10:24:31 [ main:1394 ] - [ DEBUG ] Identified candidate component class: file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/ResourceMapper.class]
+2016-06-23 10:24:31 [ main:1396 ] - [ DEBUG ] Identified candidate component class: file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/RoleMapper.class]
+2016-06-23 10:24:31 [ main:1412 ] - [ DEBUG ] Identified candidate component class: file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/RoleResMapper.class]
+2016-06-23 10:24:31 [ main:1420 ] - [ DEBUG ] Identified candidate component class: file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/UserDeviceMapper.class]
+2016-06-23 10:24:31 [ main:1427 ] - [ DEBUG ] Identified candidate component class: file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/UserLoginMapper.class]
+2016-06-23 10:24:31 [ main:1428 ] - [ DEBUG ] Identified candidate component class: file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/UserMapper.class]
+2016-06-23 10:24:31 [ main:1429 ] - [ DEBUG ] Identified candidate component class: file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/UserRoleMapper.class]
+2016-06-23 10:24:31 [ main:1445 ] - [ DEBUG ] Creating MapperFactoryBean with name 'resourceMapper' and 'com.software.server.dao.mapper.ResourceMapper' mapperInterface
+2016-06-23 10:24:31 [ main:1454 ] - [ DEBUG ] Creating MapperFactoryBean with name 'roleMapper' and 'com.software.server.dao.mapper.RoleMapper' mapperInterface
+2016-06-23 10:24:31 [ main:1458 ] - [ DEBUG ] Creating MapperFactoryBean with name 'roleResMapper' and 'com.software.server.dao.mapper.RoleResMapper' mapperInterface
+2016-06-23 10:24:31 [ main:1458 ] - [ DEBUG ] Creating MapperFactoryBean with name 'userDeviceMapper' and 'com.software.server.dao.mapper.UserDeviceMapper' mapperInterface
+2016-06-23 10:24:31 [ main:1459 ] - [ DEBUG ] Creating MapperFactoryBean with name 'userLoginMapper' and 'com.software.server.dao.mapper.UserLoginMapper' mapperInterface
+2016-06-23 10:24:31 [ main:1459 ] - [ DEBUG ] Creating MapperFactoryBean with name 'userMapper' and 'com.software.server.dao.mapper.UserMapper' mapperInterface
+2016-06-23 10:24:31 [ main:1460 ] - [ DEBUG ] Creating MapperFactoryBean with name 'userRoleMapper' and 'com.software.server.dao.mapper.UserRoleMapper' mapperInterface
+2016-06-23 10:24:32 [ main:1950 ] - [ DEBUG ] Successfully enhanced com.software.server.dao.base.DaoConfig; enhanced class name is: com.software.server.dao.base.DaoConfig$$EnhancerBySpringCGLIB$$a57ae3a2
+2016-06-23 10:24:32 [ main:1950 ] - [ DEBUG ] Replacing bean definition 'daoConfig' existing class name 'com.software.server.dao.base.DaoConfig' with enhanced class name 'com.software.server.dao.base.DaoConfig$$EnhancerBySpringCGLIB$$a57ae3a2'
+2016-06-23 10:24:32 [ main:1962 ] - [ DEBUG ] Successfully enhanced org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration; enhanced class name is: org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$32bef5f9
+2016-06-23 10:24:32 [ main:1963 ] - [ DEBUG ] Replacing bean definition 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' existing class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' with enhanced class name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$32bef5f9'
+2016-06-23 10:24:32 [ main:1969 ] - [ DEBUG ] Successfully enhanced com.software.server.dao.base.DataSourceConfig; enhanced class name is: com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255
+2016-06-23 10:24:32 [ main:1970 ] - [ DEBUG ] Replacing bean definition 'com.software.server.dao.base.DataSourceConfig' existing class name 'com.software.server.dao.base.DataSourceConfig' with enhanced class name 'com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255'
+2016-06-23 10:24:32 [ main:1971 ] - [ DEBUG ] Successfully enhanced com.software.server.dao.base.DaoConfig; enhanced class name is: com.software.server.dao.base.DaoConfig$$EnhancerBySpringCGLIB$$a57ae3a2
+2016-06-23 10:24:32 [ main:1973 ] - [ DEBUG ] Replacing bean definition 'propertyConfig' existing class name 'com.software.server.dao.base.DaoConfig' with enhanced class name 'com.software.server.dao.base.DaoConfig$$EnhancerBySpringCGLIB$$a57ae3a2'
+2016-06-23 10:24:32 [ main:1974 ] - [ DEBUG ] Creating shared instance of singleton bean 'propertyConfig'
+2016-06-23 10:24:32 [ main:1975 ] - [ DEBUG ] Creating instance of bean 'propertyConfig'
+2016-06-23 10:24:32 [ main:2022 ] - [ DEBUG ] Eagerly caching bean 'propertyConfig' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2023 ] - [ DEBUG ] Finished creating instance of bean 'propertyConfig'
+2016-06-23 10:24:32 [ main:2025 ] - [ DEBUG ] Adding [environmentProperties] PropertySource with lowest search precedence
+2016-06-23 10:24:32 [ main:2026 ] - [ DEBUG ] Adding [localProperties] PropertySource with lowest search precedence
+2016-06-23 10:24:32 [ main:2053 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2053 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2061 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2062 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2063 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2065 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2068 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2069 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2070 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2070 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2083 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2083 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2084 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2085 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2091 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2091 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2092 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-06-23 10:24:32 [ main:2093 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-06-23 10:24:32 [ main:2094 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2094 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-06-23 10:24:32 [ main:2096 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-06-23 10:24:32 [ main:2096 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-06-23 10:24:32 [ main:2097 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2097 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-06-23 10:24:32 [ main:2098 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-06-23 10:24:32 [ main:2098 ] - [ DEBUG ] Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-06-23 10:24:32 [ main:2144 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2210 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-06-23 10:24:32 [ main:2229 ] - [ DEBUG ] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@232ae98]
+2016-06-23 10:24:32 [ main:2235 ] - [ DEBUG ] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@36e159d]
+2016-06-23 10:24:32 [ main:2240 ] - [ DEBUG ] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3edcbc7b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,daoConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,userDao,org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration,org.springframework.transaction.config.internalTransactionAdvisor,transactionAttributeSource,transactionInterceptor,org.springframework.transaction.config.internalTransactionalEventListenerFactory,com.software.server.dao.base.DataSourceConfig,dataSource,propertyConfig,sqlSessionFactory,pageHelper,transactionManager,resourceMapper,roleMapper,roleResMapper,userDeviceMapper,userLoginMapper,userMapper,userRoleMapper,org.springframework.aop.config.internalAutoProxyCreator]; root of factory hierarchy
+2016-06-23 10:24:32 [ main:2242 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2242 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2243 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2243 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2244 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2016-06-23 10:24:32 [ main:2244 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2016-06-23 10:24:32 [ main:2245 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2016-06-23 10:24:32 [ main:2248 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2254 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:32 [ main:2254 ] - [ DEBUG ] Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:32 [ main:2255 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-06-23 10:24:32 [ main:2256 ] - [ DEBUG ] Creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-06-23 10:24:32 [ main:2276 ] - [ DEBUG ] Registered injected element on class [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$32bef5f9]: AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
+2016-06-23 10:24:32 [ main:2277 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2280 ] - [ DEBUG ] Processing injected element of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': AutowiredMethodElement for void org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration.setConfigurers(java.util.Collection)
+2016-06-23 10:24:32 [ main:2296 ] - [ DEBUG ] Creating shared instance of singleton bean 'resourceMapper'
+2016-06-23 10:24:32 [ main:2300 ] - [ DEBUG ] Creating instance of bean 'resourceMapper'
+2016-06-23 10:24:32 [ main:2301 ] - [ DEBUG ] Eagerly caching bean 'resourceMapper' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2322 ] - [ DEBUG ] Creating shared instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:32 [ main:2323 ] - [ DEBUG ] Creating instance of bean 'sqlSessionFactory'
+2016-06-23 10:24:32 [ main:2323 ] - [ DEBUG ] Creating shared instance of singleton bean 'daoConfig'
+2016-06-23 10:24:32 [ main:2324 ] - [ DEBUG ] Creating instance of bean 'daoConfig'
+2016-06-23 10:24:32 [ main:2327 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DaoConfig$$EnhancerBySpringCGLIB$$a57ae3a2]: AutowiredFieldElement for private javax.sql.DataSource com.software.server.dao.base.DaoConfig.dataSource
+2016-06-23 10:24:32 [ main:2328 ] - [ DEBUG ] Eagerly caching bean 'daoConfig' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2355 ] - [ DEBUG ] Processing injected element of bean 'daoConfig': AutowiredFieldElement for private javax.sql.DataSource com.software.server.dao.base.DaoConfig.dataSource
+2016-06-23 10:24:32 [ main:2357 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:32 [ main:2372 ] - [ DEBUG ] Returning eagerly cached instance of singleton bean 'resourceMapper' that is not fully initialized yet - a consequence of a circular reference
+2016-06-23 10:24:32 [ main:2373 ] - [ DEBUG ] Creating shared instance of singleton bean 'roleMapper'
+2016-06-23 10:24:32 [ main:2374 ] - [ DEBUG ] Creating instance of bean 'roleMapper'
+2016-06-23 10:24:32 [ main:2375 ] - [ DEBUG ] Eagerly caching bean 'roleMapper' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2378 ] - [ DEBUG ] Creating shared instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:32 [ main:2382 ] - [ WARN ] Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleMapper' defined in file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/RoleMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'sqlSessionFactory': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2016-06-23 10:24:32 [ main:2384 ] - [ DEBUG ] Creating shared instance of singleton bean 'roleResMapper'
+2016-06-23 10:24:32 [ main:2385 ] - [ DEBUG ] Creating instance of bean 'roleResMapper'
+2016-06-23 10:24:32 [ main:2386 ] - [ DEBUG ] Eagerly caching bean 'roleResMapper' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2387 ] - [ DEBUG ] Creating shared instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:32 [ main:2388 ] - [ WARN ] Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'roleResMapper' defined in file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/RoleResMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'sqlSessionFactory': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2016-06-23 10:24:32 [ main:2389 ] - [ DEBUG ] Creating shared instance of singleton bean 'userDeviceMapper'
+2016-06-23 10:24:32 [ main:2390 ] - [ DEBUG ] Creating instance of bean 'userDeviceMapper'
+2016-06-23 10:24:32 [ main:2391 ] - [ DEBUG ] Eagerly caching bean 'userDeviceMapper' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2392 ] - [ DEBUG ] Creating shared instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:32 [ main:2393 ] - [ WARN ] Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDeviceMapper' defined in file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/UserDeviceMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'sqlSessionFactory': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2016-06-23 10:24:32 [ main:2427 ] - [ DEBUG ] Creating shared instance of singleton bean 'userLoginMapper'
+2016-06-23 10:24:32 [ main:2427 ] - [ DEBUG ] Creating instance of bean 'userLoginMapper'
+2016-06-23 10:24:32 [ main:2428 ] - [ DEBUG ] Eagerly caching bean 'userLoginMapper' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2430 ] - [ DEBUG ] Creating shared instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:32 [ main:2430 ] - [ WARN ] Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userLoginMapper' defined in file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/UserLoginMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'sqlSessionFactory': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2016-06-23 10:24:32 [ main:2432 ] - [ DEBUG ] Creating shared instance of singleton bean 'userMapper'
+2016-06-23 10:24:32 [ main:2432 ] - [ DEBUG ] Creating instance of bean 'userMapper'
+2016-06-23 10:24:32 [ main:2433 ] - [ DEBUG ] Eagerly caching bean 'userMapper' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2434 ] - [ DEBUG ] Creating shared instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:32 [ main:2434 ] - [ WARN ] Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userMapper' defined in file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/UserMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'sqlSessionFactory': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2016-06-23 10:24:32 [ main:2436 ] - [ DEBUG ] Creating shared instance of singleton bean 'userRoleMapper'
+2016-06-23 10:24:32 [ main:2436 ] - [ DEBUG ] Creating instance of bean 'userRoleMapper'
+2016-06-23 10:24:32 [ main:2437 ] - [ DEBUG ] Eagerly caching bean 'userRoleMapper' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2439 ] - [ DEBUG ] Creating shared instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:32 [ main:2439 ] - [ WARN ] Bean creation exception on FactoryBean type check: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRoleMapper' defined in file [/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/mapper/UserRoleMapper.class]: Cannot resolve reference to bean 'sqlSessionFactory' while setting bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'sqlSessionFactory': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2016-06-23 10:24:32 [ main:2442 ] - [ DEBUG ] Creating shared instance of singleton bean 'dataSource'
+2016-06-23 10:24:32 [ main:2442 ] - [ DEBUG ] Creating instance of bean 'dataSource'
+2016-06-23 10:24:32 [ main:2443 ] - [ DEBUG ] Creating shared instance of singleton bean 'com.software.server.dao.base.DataSourceConfig'
+2016-06-23 10:24:32 [ main:2444 ] - [ DEBUG ] Creating instance of bean 'com.software.server.dao.base.DataSourceConfig'
+2016-06-23 10:24:32 [ main:2454 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.driverClassName
+2016-06-23 10:24:32 [ main:2455 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.url
+2016-06-23 10:24:32 [ main:2455 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.username
+2016-06-23 10:24:32 [ main:2456 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.password
+2016-06-23 10:24:32 [ main:2457 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.maxActive
+2016-06-23 10:24:32 [ main:2458 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.initialSize
+2016-06-23 10:24:32 [ main:2459 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.maxWait
+2016-06-23 10:24:32 [ main:2460 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.minIdle
+2016-06-23 10:24:32 [ main:2461 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.timeBetweenEvictionRunsMillis
+2016-06-23 10:24:32 [ main:2462 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.minEvictableIdleTimeMillis
+2016-06-23 10:24:32 [ main:2462 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.validationQuery
+2016-06-23 10:24:32 [ main:2463 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.testWhileIdle
+2016-06-23 10:24:32 [ main:2463 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.testOnBorrow
+2016-06-23 10:24:32 [ main:2473 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.testOnReturn
+2016-06-23 10:24:32 [ main:2474 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.removeAbandoned
+2016-06-23 10:24:32 [ main:2474 ] - [ DEBUG ] Registered injected element on class [com.software.server.dao.base.DataSourceConfig$$EnhancerBySpringCGLIB$$47c12255]: AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.removeAbandonedTimeout
+2016-06-23 10:24:32 [ main:2475 ] - [ DEBUG ] Eagerly caching bean 'com.software.server.dao.base.DataSourceConfig' to allow for resolving potential circular references
+2016-06-23 10:24:32 [ main:2480 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.driverClassName
+2016-06-23 10:24:32 [ main:2481 ] - [ DEBUG ] Searching for key 'db.driverClassName' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2481 ] - [ DEBUG ] Searching for key 'db.driverClassName' in [systemProperties]
+2016-06-23 10:24:32 [ main:2482 ] - [ DEBUG ] Searching for key 'db.driverClassName' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2482 ] - [ DEBUG ] Searching for key 'db.driverClassName' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2483 ] - [ DEBUG ] Found key 'db.driverClassName' in [class path resource [config/database.properties]] with type [String] and value 'com.mysql.jdbc.Driver'
+2016-06-23 10:24:32 [ main:2487 ] - [ DEBUG ] Found key 'db.driverClassName' in [environmentProperties] with type [String] and value 'com.mysql.jdbc.Driver'
+2016-06-23 10:24:32 [ main:2488 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.url
+2016-06-23 10:24:32 [ main:2488 ] - [ DEBUG ] Searching for key 'db.url' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2489 ] - [ DEBUG ] Searching for key 'db.url' in [systemProperties]
+2016-06-23 10:24:32 [ main:2489 ] - [ DEBUG ] Searching for key 'db.url' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2490 ] - [ DEBUG ] Searching for key 'db.url' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2490 ] - [ DEBUG ] Found key 'db.url' in [class path resource [config/database.properties]] with type [String] and value 'jdbc:mysql://127.0.0.1:3306/software?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=true'
+2016-06-23 10:24:32 [ main:2491 ] - [ DEBUG ] Found key 'db.url' in [environmentProperties] with type [String] and value 'jdbc:mysql://127.0.0.1:3306/software?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=true'
+2016-06-23 10:24:32 [ main:2491 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.username
+2016-06-23 10:24:32 [ main:2493 ] - [ DEBUG ] Searching for key 'db.username' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2493 ] - [ DEBUG ] Searching for key 'db.username' in [systemProperties]
+2016-06-23 10:24:32 [ main:2493 ] - [ DEBUG ] Searching for key 'db.username' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2494 ] - [ DEBUG ] Searching for key 'db.username' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2495 ] - [ DEBUG ] Found key 'db.username' in [class path resource [config/database.properties]] with type [String] and value 'root'
+2016-06-23 10:24:32 [ main:2495 ] - [ DEBUG ] Found key 'db.username' in [environmentProperties] with type [String] and value 'root'
+2016-06-23 10:24:32 [ main:2496 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.password
+2016-06-23 10:24:32 [ main:2497 ] - [ DEBUG ] Searching for key 'db.password' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2498 ] - [ DEBUG ] Searching for key 'db.password' in [systemProperties]
+2016-06-23 10:24:32 [ main:2498 ] - [ DEBUG ] Searching for key 'db.password' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2499 ] - [ DEBUG ] Searching for key 'db.password' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2499 ] - [ DEBUG ] Found key 'db.password' in [class path resource [config/database.properties]] with type [String] and value '123456'
+2016-06-23 10:24:32 [ main:2500 ] - [ DEBUG ] Found key 'db.password' in [environmentProperties] with type [String] and value '123456'
+2016-06-23 10:24:32 [ main:2500 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.maxActive
+2016-06-23 10:24:32 [ main:2502 ] - [ DEBUG ] Searching for key 'db.maxActive' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2502 ] - [ DEBUG ] Searching for key 'db.maxActive' in [systemProperties]
+2016-06-23 10:24:32 [ main:2502 ] - [ DEBUG ] Searching for key 'db.maxActive' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2503 ] - [ DEBUG ] Searching for key 'db.maxActive' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2503 ] - [ DEBUG ] Found key 'db.maxActive' in [class path resource [config/database.properties]] with type [String] and value '50'
+2016-06-23 10:24:32 [ main:2504 ] - [ DEBUG ] Found key 'db.maxActive' in [environmentProperties] with type [String] and value '50'
+2016-06-23 10:24:32 [ main:2505 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.initialSize
+2016-06-23 10:24:32 [ main:2506 ] - [ DEBUG ] Searching for key 'db.initialSize' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2507 ] - [ DEBUG ] Searching for key 'db.initialSize' in [systemProperties]
+2016-06-23 10:24:32 [ main:2507 ] - [ DEBUG ] Searching for key 'db.initialSize' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2508 ] - [ DEBUG ] Searching for key 'db.initialSize' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2509 ] - [ DEBUG ] Found key 'db.initialSize' in [class path resource [config/database.properties]] with type [String] and value '1'
+2016-06-23 10:24:32 [ main:2510 ] - [ DEBUG ] Found key 'db.initialSize' in [environmentProperties] with type [String] and value '1'
+2016-06-23 10:24:32 [ main:2511 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.maxWait
+2016-06-23 10:24:32 [ main:2512 ] - [ DEBUG ] Searching for key 'db.maxWait' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2512 ] - [ DEBUG ] Searching for key 'db.maxWait' in [systemProperties]
+2016-06-23 10:24:32 [ main:2513 ] - [ DEBUG ] Searching for key 'db.maxWait' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2514 ] - [ DEBUG ] Searching for key 'db.maxWait' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2514 ] - [ DEBUG ] Found key 'db.maxWait' in [class path resource [config/database.properties]] with type [String] and value '60000'
+2016-06-23 10:24:32 [ main:2515 ] - [ DEBUG ] Found key 'db.maxWait' in [environmentProperties] with type [String] and value '60000'
+2016-06-23 10:24:32 [ main:2516 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.minIdle
+2016-06-23 10:24:32 [ main:2517 ] - [ DEBUG ] Searching for key 'db.minIdle' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2517 ] - [ DEBUG ] Searching for key 'db.minIdle' in [systemProperties]
+2016-06-23 10:24:32 [ main:2518 ] - [ DEBUG ] Searching for key 'db.minIdle' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2518 ] - [ DEBUG ] Searching for key 'db.minIdle' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2519 ] - [ DEBUG ] Found key 'db.minIdle' in [class path resource [config/database.properties]] with type [String] and value '1'
+2016-06-23 10:24:32 [ main:2520 ] - [ DEBUG ] Found key 'db.minIdle' in [environmentProperties] with type [String] and value '1'
+2016-06-23 10:24:32 [ main:2520 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.timeBetweenEvictionRunsMillis
+2016-06-23 10:24:32 [ main:2521 ] - [ DEBUG ] Searching for key 'db.timeBetweenEvictionRunsMillis' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2522 ] - [ DEBUG ] Searching for key 'db.timeBetweenEvictionRunsMillis' in [systemProperties]
+2016-06-23 10:24:32 [ main:2522 ] - [ DEBUG ] Searching for key 'db.timeBetweenEvictionRunsMillis' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2527 ] - [ DEBUG ] Searching for key 'db.timeBetweenEvictionRunsMillis' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2527 ] - [ DEBUG ] Found key 'db.timeBetweenEvictionRunsMillis' in [class path resource [config/database.properties]] with type [String] and value '3000'
+2016-06-23 10:24:32 [ main:2528 ] - [ DEBUG ] Found key 'db.timeBetweenEvictionRunsMillis' in [environmentProperties] with type [String] and value '3000'
+2016-06-23 10:24:32 [ main:2528 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.minEvictableIdleTimeMillis
+2016-06-23 10:24:32 [ main:2541 ] - [ DEBUG ] Searching for key 'db.minEvictableIdleTimeMillis' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2542 ] - [ DEBUG ] Searching for key 'db.minEvictableIdleTimeMillis' in [systemProperties]
+2016-06-23 10:24:32 [ main:2542 ] - [ DEBUG ] Searching for key 'db.minEvictableIdleTimeMillis' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2543 ] - [ DEBUG ] Searching for key 'db.minEvictableIdleTimeMillis' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2544 ] - [ DEBUG ] Found key 'db.minEvictableIdleTimeMillis' in [class path resource [config/database.properties]] with type [String] and value '300000'
+2016-06-23 10:24:32 [ main:2546 ] - [ DEBUG ] Found key 'db.minEvictableIdleTimeMillis' in [environmentProperties] with type [String] and value '300000'
+2016-06-23 10:24:32 [ main:2546 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.validationQuery
+2016-06-23 10:24:32 [ main:2548 ] - [ DEBUG ] Searching for key 'db.validationQuery' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2548 ] - [ DEBUG ] Searching for key 'db.validationQuery' in [systemProperties]
+2016-06-23 10:24:32 [ main:2552 ] - [ DEBUG ] Searching for key 'db.validationQuery' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2553 ] - [ DEBUG ] Searching for key 'db.validationQuery' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2560 ] - [ DEBUG ] Found key 'db.validationQuery' in [class path resource [config/database.properties]] with type [String] and value 'SELECT 1'
+2016-06-23 10:24:32 [ main:2560 ] - [ DEBUG ] Found key 'db.validationQuery' in [environmentProperties] with type [String] and value 'SELECT 1'
+2016-06-23 10:24:32 [ main:2566 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.testWhileIdle
+2016-06-23 10:24:32 [ main:2567 ] - [ DEBUG ] Searching for key 'db.testWhileIdle' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2567 ] - [ DEBUG ] Searching for key 'db.testWhileIdle' in [systemProperties]
+2016-06-23 10:24:32 [ main:2567 ] - [ DEBUG ] Searching for key 'db.testWhileIdle' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2568 ] - [ DEBUG ] Searching for key 'db.testWhileIdle' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2568 ] - [ DEBUG ] Found key 'db.testWhileIdle' in [class path resource [config/database.properties]] with type [String] and value 'true'
+2016-06-23 10:24:32 [ main:2569 ] - [ DEBUG ] Found key 'db.testWhileIdle' in [environmentProperties] with type [String] and value 'true'
+2016-06-23 10:24:32 [ main:2569 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.testOnBorrow
+2016-06-23 10:24:32 [ main:2570 ] - [ DEBUG ] Searching for key 'db.testOnBorrow' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2571 ] - [ DEBUG ] Searching for key 'db.testOnBorrow' in [systemProperties]
+2016-06-23 10:24:32 [ main:2572 ] - [ DEBUG ] Searching for key 'db.testOnBorrow' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2572 ] - [ DEBUG ] Searching for key 'db.testOnBorrow' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2573 ] - [ DEBUG ] Found key 'db.testOnBorrow' in [class path resource [config/database.properties]] with type [String] and value 'false'
+2016-06-23 10:24:32 [ main:2574 ] - [ DEBUG ] Found key 'db.testOnBorrow' in [environmentProperties] with type [String] and value 'false'
+2016-06-23 10:24:32 [ main:2575 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.testOnReturn
+2016-06-23 10:24:32 [ main:2576 ] - [ DEBUG ] Searching for key 'db.testOnReturn' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2576 ] - [ DEBUG ] Searching for key 'db.testOnReturn' in [systemProperties]
+2016-06-23 10:24:32 [ main:2577 ] - [ DEBUG ] Searching for key 'db.testOnReturn' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2578 ] - [ DEBUG ] Searching for key 'db.testOnReturn' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2578 ] - [ DEBUG ] Found key 'db.testOnReturn' in [class path resource [config/database.properties]] with type [String] and value 'false'
+2016-06-23 10:24:32 [ main:2579 ] - [ DEBUG ] Found key 'db.testOnReturn' in [environmentProperties] with type [String] and value 'false'
+2016-06-23 10:24:32 [ main:2579 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.removeAbandoned
+2016-06-23 10:24:32 [ main:2580 ] - [ DEBUG ] Searching for key 'db.removeAbandoned' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2581 ] - [ DEBUG ] Searching for key 'db.removeAbandoned' in [systemProperties]
+2016-06-23 10:24:32 [ main:2581 ] - [ DEBUG ] Searching for key 'db.removeAbandoned' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2582 ] - [ DEBUG ] Searching for key 'db.removeAbandoned' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2583 ] - [ DEBUG ] Found key 'db.removeAbandoned' in [class path resource [config/database.properties]] with type [String] and value 'true'
+2016-06-23 10:24:32 [ main:2584 ] - [ DEBUG ] Found key 'db.removeAbandoned' in [environmentProperties] with type [String] and value 'true'
+2016-06-23 10:24:32 [ main:2585 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.base.DataSourceConfig': AutowiredFieldElement for private java.lang.String com.software.server.dao.base.DataSourceConfig.removeAbandonedTimeout
+2016-06-23 10:24:32 [ main:2586 ] - [ DEBUG ] Searching for key 'db.removeAbandonedTimeout' in [environmentProperties]
+2016-06-23 10:24:32 [ main:2589 ] - [ DEBUG ] Searching for key 'db.removeAbandonedTimeout' in [systemProperties]
+2016-06-23 10:24:32 [ main:2591 ] - [ DEBUG ] Searching for key 'db.removeAbandonedTimeout' in [systemEnvironment]
+2016-06-23 10:24:32 [ main:2592 ] - [ DEBUG ] Searching for key 'db.removeAbandonedTimeout' in [class path resource [config/database.properties]]
+2016-06-23 10:24:32 [ main:2594 ] - [ DEBUG ] Found key 'db.removeAbandonedTimeout' in [class path resource [config/database.properties]] with type [String] and value '180'
+2016-06-23 10:24:32 [ main:2596 ] - [ DEBUG ] Found key 'db.removeAbandonedTimeout' in [environmentProperties] with type [String] and value '180'
+2016-06-23 10:24:32 [ main:2597 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:32 [ main:2598 ] - [ DEBUG ] Finished creating instance of bean 'com.software.server.dao.base.DataSourceConfig'
+2016-06-23 10:24:33 [ main:2910 ] - [ DEBUG ] Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+2016-06-23 10:24:33 [ main:2999 ] - [ DEBUG ] Invoking init method  'init' on bean with name 'dataSource'
+2016-06-23 10:24:33 [ main:3725 ] - [ INFO ] {dataSource-1} inited
+2016-06-23 10:24:33 [ main:3725 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:33 [ main:3725 ] - [ DEBUG ] Finished creating instance of bean 'dataSource'
+2016-06-23 10:24:33 [ main:3726 ] - [ DEBUG ] Autowiring by type from bean name 'daoConfig' to bean named 'dataSource'
+2016-06-23 10:24:33 [ main:3726 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:33 [ main:3727 ] - [ DEBUG ] Finished creating instance of bean 'daoConfig'
+2016-06-23 10:24:33 [ main:3752 ] - [ DEBUG ] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2016-06-23 10:24:33 [ main:3757 ] - [ DEBUG ] Creating shared instance of singleton bean 'pageHelper'
+2016-06-23 10:24:33 [ main:3758 ] - [ DEBUG ] Creating instance of bean 'pageHelper'
+2016-06-23 10:24:33 [ main:3758 ] - [ DEBUG ] Returning cached instance of singleton bean 'daoConfig'
+2016-06-23 10:24:33 [ main:3780 ] - [ DEBUG ] Eagerly caching bean 'pageHelper' to allow for resolving potential circular references
+2016-06-23 10:24:33 [ main:3784 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:33 [ main:3785 ] - [ DEBUG ] Finished creating instance of bean 'pageHelper'
+2016-06-23 10:24:33 [ main:3785 ] - [ DEBUG ] Looking for matching resources in directory tree [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper]
+2016-06-23 10:24:33 [ main:3786 ] - [ DEBUG ] Searching directory [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper] for files matching pattern [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/*.xml]
+2016-06-23 10:24:33 [ main:3788 ] - [ DEBUG ] Resolved location pattern [classpath:config/mapper/*.xml] to resources [file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/ResourceMapper.xml], file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/RoleMapper.xml], file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/RoleResMapper.xml], file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/UserDeviceMapper.xml], file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/UserLoginMapper.xml], file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/UserMapper.xml], file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/UserRoleMapper.xml]]
+2016-06-23 10:24:34 [ main:3906 ] - [ DEBUG ] Class not found: org.jboss.vfs.VFS
+2016-06-23 10:24:34 [ main:3906 ] - [ DEBUG ] JBoss 6 VFS API is not available in this environment.
+2016-06-23 10:24:34 [ main:3907 ] - [ DEBUG ] Class not found: org.jboss.vfs.VirtualFile
+2016-06-23 10:24:34 [ main:3908 ] - [ DEBUG ] VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+2016-06-23 10:24:34 [ main:3908 ] - [ DEBUG ] Using VFS adapter org.apache.ibatis.io.DefaultVFS
+2016-06-23 10:24:34 [ main:3909 ] - [ DEBUG ] Find JAR URL: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model
+2016-06-23 10:24:34 [ main:3909 ] - [ DEBUG ] Not a JAR: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model
+2016-06-23 10:24:34 [ main:4054 ] - [ DEBUG ] Reader entry: ResourceModel.class
+2016-06-23 10:24:34 [ main:4054 ] - [ DEBUG ] Reader entry: RoleModel.class
+2016-06-23 10:24:34 [ main:4055 ] - [ DEBUG ] Reader entry: RoleResModel.class
+2016-06-23 10:24:34 [ main:4055 ] - [ DEBUG ] Reader entry: UserDeviceModel.class
+2016-06-23 10:24:34 [ main:4056 ] - [ DEBUG ] Reader entry: UserLoginModel.class
+2016-06-23 10:24:34 [ main:4056 ] - [ DEBUG ] Reader entry: UserModel.class
+2016-06-23 10:24:34 [ main:4067 ] - [ DEBUG ] Reader entry: UserRoleModel.class
+2016-06-23 10:24:34 [ main:4069 ] - [ DEBUG ] Listing file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model
+2016-06-23 10:24:34 [ main:4069 ] - [ DEBUG ] Find JAR URL: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/ResourceModel.class
+2016-06-23 10:24:34 [ main:4070 ] - [ DEBUG ] Not a JAR: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/ResourceModel.class
+2016-06-23 10:24:34 [ main:4071 ] - [ DEBUG ] Reader entry: ����   3 P
+2016-06-23 10:24:34 [ main:4072 ] - [ DEBUG ] Find JAR URL: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/RoleModel.class
+2016-06-23 10:24:34 [ main:4072 ] - [ DEBUG ] Not a JAR: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/RoleModel.class
+2016-06-23 10:24:34 [ main:4073 ] - [ DEBUG ] Reader entry: ����   3 B
+2016-06-23 10:24:34 [ main:4074 ] - [ DEBUG ] Find JAR URL: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/RoleResModel.class
+2016-06-23 10:24:34 [ main:4074 ] - [ DEBUG ] Not a JAR: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/RoleResModel.class
+2016-06-23 10:24:34 [ main:4076 ] - [ DEBUG ] Reader entry: ����   3 "
+2016-06-23 10:24:34 [ main:4077 ] - [ DEBUG ] Find JAR URL: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/UserDeviceModel.class
+2016-06-23 10:24:34 [ main:4078 ] - [ DEBUG ] Not a JAR: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/UserDeviceModel.class
+2016-06-23 10:24:34 [ main:4079 ] - [ DEBUG ] Reader entry: ����   3 l
+2016-06-23 10:24:34 [ main:4080 ] - [ DEBUG ] Find JAR URL: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/UserLoginModel.class
+2016-06-23 10:24:34 [ main:4081 ] - [ DEBUG ] Not a JAR: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/UserLoginModel.class
+2016-06-23 10:24:34 [ main:4082 ] - [ DEBUG ] Reader entry: ����   3 B
+2016-06-23 10:24:34 [ main:4084 ] - [ DEBUG ] Find JAR URL: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/UserModel.class
+2016-06-23 10:24:34 [ main:4085 ] - [ DEBUG ] Not a JAR: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/UserModel.class
+2016-06-23 10:24:34 [ main:4107 ] - [ DEBUG ] Reader entry: ����   3 �
+2016-06-23 10:24:34 [ main:4108 ] - [ DEBUG ] Find JAR URL: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/UserRoleModel.class
+2016-06-23 10:24:34 [ main:4108 ] - [ DEBUG ] Not a JAR: file:/Users/jk/Documents/server/server/server-dao/target/classes/com/software/server/dao/model/UserRoleModel.class
+2016-06-23 10:24:34 [ main:4109 ] - [ DEBUG ] Reader entry: ����   3 "
+2016-06-23 10:24:34 [ main:4110 ] - [ DEBUG ] Checking to see if class com.software.server.dao.model.ResourceModel matches criteria [is assignable to Object]
+2016-06-23 10:24:34 [ main:4111 ] - [ DEBUG ] Checking to see if class com.software.server.dao.model.RoleModel matches criteria [is assignable to Object]
+2016-06-23 10:24:34 [ main:4111 ] - [ DEBUG ] Checking to see if class com.software.server.dao.model.RoleResModel matches criteria [is assignable to Object]
+2016-06-23 10:24:34 [ main:4112 ] - [ DEBUG ] Checking to see if class com.software.server.dao.model.UserDeviceModel matches criteria [is assignable to Object]
+2016-06-23 10:24:34 [ main:4114 ] - [ DEBUG ] Checking to see if class com.software.server.dao.model.UserLoginModel matches criteria [is assignable to Object]
+2016-06-23 10:24:34 [ main:4116 ] - [ DEBUG ] Checking to see if class com.software.server.dao.model.UserModel matches criteria [is assignable to Object]
+2016-06-23 10:24:34 [ main:4117 ] - [ DEBUG ] Checking to see if class com.software.server.dao.model.UserRoleModel matches criteria [is assignable to Object]
+2016-06-23 10:24:34 [ main:4119 ] - [ DEBUG ] Scanned package: 'com.software.server.dao.model' for aliases
+2016-06-23 10:24:34 [ main:4119 ] - [ DEBUG ] Registered plugin: 'com.github.pagehelper.PageHelper@718e2e50'
+2016-06-23 10:24:34 [ main:4201 ] - [ DEBUG ] Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2016-06-23 10:24:34 [ main:4204 ] - [ DEBUG ] Parsed configuration file: 'class path resource [config/mybatis-config.xml]'
+2016-06-23 10:24:34 [ main:4330 ] - [ DEBUG ] Parsed mapper file: 'file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/ResourceMapper.xml]'
+2016-06-23 10:24:34 [ main:4374 ] - [ DEBUG ] Parsed mapper file: 'file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/RoleMapper.xml]'
+2016-06-23 10:24:34 [ main:4419 ] - [ DEBUG ] Parsed mapper file: 'file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/RoleResMapper.xml]'
+2016-06-23 10:24:34 [ main:4482 ] - [ DEBUG ] Parsed mapper file: 'file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/UserDeviceMapper.xml]'
+2016-06-23 10:24:34 [ main:4522 ] - [ DEBUG ] Parsed mapper file: 'file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/UserLoginMapper.xml]'
+2016-06-23 10:24:34 [ main:4596 ] - [ DEBUG ] Parsed mapper file: 'file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/UserMapper.xml]'
+2016-06-23 10:24:34 [ main:4650 ] - [ DEBUG ] Parsed mapper file: 'file [/Users/jk/Documents/server/server/server-dao/target/classes/config/mapper/UserRoleMapper.xml]'
+2016-06-23 10:24:34 [ main:4655 ] - [ DEBUG ] Eagerly caching bean 'sqlSessionFactory' to allow for resolving potential circular references
+2016-06-23 10:24:34 [ main:4658 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:34 [ main:4659 ] - [ DEBUG ] Finished creating instance of bean 'sqlSessionFactory'
+2016-06-23 10:24:34 [ main:4694 ] - [ DEBUG ] Invoking afterPropertiesSet() on bean with name 'resourceMapper'
+2016-06-23 10:24:34 [ main:4694 ] - [ DEBUG ] Finished creating instance of bean 'resourceMapper'
+2016-06-23 10:24:34 [ main:4695 ] - [ DEBUG ] Creating shared instance of singleton bean 'roleMapper'
+2016-06-23 10:24:34 [ main:4695 ] - [ DEBUG ] Creating instance of bean 'roleMapper'
+2016-06-23 10:24:34 [ main:4695 ] - [ DEBUG ] Eagerly caching bean 'roleMapper' to allow for resolving potential circular references
+2016-06-23 10:24:34 [ main:4697 ] - [ DEBUG ] Returning cached instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:34 [ main:4698 ] - [ DEBUG ] Invoking afterPropertiesSet() on bean with name 'roleMapper'
+2016-06-23 10:24:34 [ main:4698 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:34 [ main:4698 ] - [ DEBUG ] Finished creating instance of bean 'roleMapper'
+2016-06-23 10:24:34 [ main:4699 ] - [ DEBUG ] Creating shared instance of singleton bean 'roleResMapper'
+2016-06-23 10:24:34 [ main:4699 ] - [ DEBUG ] Creating instance of bean 'roleResMapper'
+2016-06-23 10:24:34 [ main:4700 ] - [ DEBUG ] Eagerly caching bean 'roleResMapper' to allow for resolving potential circular references
+2016-06-23 10:24:34 [ main:4700 ] - [ DEBUG ] Returning cached instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:34 [ main:4701 ] - [ DEBUG ] Invoking afterPropertiesSet() on bean with name 'roleResMapper'
+2016-06-23 10:24:34 [ main:4701 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:34 [ main:4701 ] - [ DEBUG ] Finished creating instance of bean 'roleResMapper'
+2016-06-23 10:24:34 [ main:4702 ] - [ DEBUG ] Creating shared instance of singleton bean 'userDeviceMapper'
+2016-06-23 10:24:34 [ main:4702 ] - [ DEBUG ] Creating instance of bean 'userDeviceMapper'
+2016-06-23 10:24:34 [ main:4702 ] - [ DEBUG ] Eagerly caching bean 'userDeviceMapper' to allow for resolving potential circular references
+2016-06-23 10:24:34 [ main:4703 ] - [ DEBUG ] Returning cached instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:34 [ main:4704 ] - [ DEBUG ] Invoking afterPropertiesSet() on bean with name 'userDeviceMapper'
+2016-06-23 10:24:34 [ main:4704 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:34 [ main:4705 ] - [ DEBUG ] Finished creating instance of bean 'userDeviceMapper'
+2016-06-23 10:24:34 [ main:4705 ] - [ DEBUG ] Creating shared instance of singleton bean 'userLoginMapper'
+2016-06-23 10:24:34 [ main:4706 ] - [ DEBUG ] Creating instance of bean 'userLoginMapper'
+2016-06-23 10:24:34 [ main:4706 ] - [ DEBUG ] Eagerly caching bean 'userLoginMapper' to allow for resolving potential circular references
+2016-06-23 10:24:34 [ main:4706 ] - [ DEBUG ] Returning cached instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:34 [ main:4707 ] - [ DEBUG ] Invoking afterPropertiesSet() on bean with name 'userLoginMapper'
+2016-06-23 10:24:34 [ main:4707 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:34 [ main:4708 ] - [ DEBUG ] Finished creating instance of bean 'userLoginMapper'
+2016-06-23 10:24:34 [ main:4708 ] - [ DEBUG ] Creating shared instance of singleton bean 'userMapper'
+2016-06-23 10:24:34 [ main:4709 ] - [ DEBUG ] Creating instance of bean 'userMapper'
+2016-06-23 10:24:34 [ main:4710 ] - [ DEBUG ] Eagerly caching bean 'userMapper' to allow for resolving potential circular references
+2016-06-23 10:24:34 [ main:4710 ] - [ DEBUG ] Returning cached instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:34 [ main:4710 ] - [ DEBUG ] Invoking afterPropertiesSet() on bean with name 'userMapper'
+2016-06-23 10:24:34 [ main:4711 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:34 [ main:4711 ] - [ DEBUG ] Finished creating instance of bean 'userMapper'
+2016-06-23 10:24:34 [ main:4712 ] - [ DEBUG ] Creating shared instance of singleton bean 'userRoleMapper'
+2016-06-23 10:24:34 [ main:4712 ] - [ DEBUG ] Creating instance of bean 'userRoleMapper'
+2016-06-23 10:24:34 [ main:4713 ] - [ DEBUG ] Eagerly caching bean 'userRoleMapper' to allow for resolving potential circular references
+2016-06-23 10:24:34 [ main:4714 ] - [ DEBUG ] Returning cached instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:34 [ main:4715 ] - [ DEBUG ] Invoking afterPropertiesSet() on bean with name 'userRoleMapper'
+2016-06-23 10:24:34 [ main:4715 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:34 [ main:4716 ] - [ DEBUG ] Finished creating instance of bean 'userRoleMapper'
+2016-06-23 10:24:34 [ main:4717 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry'
+2016-06-23 10:24:34 [ main:4718 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:34 [ main:4718 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-06-23 10:24:34 [ main:4742 ] - [ DEBUG ] Creating shared instance of singleton bean 'transactionAttributeSource'
+2016-06-23 10:24:34 [ main:4742 ] - [ DEBUG ] Creating instance of bean 'transactionAttributeSource'
+2016-06-23 10:24:34 [ main:4743 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-06-23 10:24:34 [ main:4744 ] - [ DEBUG ] Eagerly caching bean 'transactionAttributeSource' to allow for resolving potential circular references
+2016-06-23 10:24:34 [ main:4746 ] - [ DEBUG ] Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:34 [ main:4747 ] - [ DEBUG ] Finished creating instance of bean 'transactionAttributeSource'
+2016-06-23 10:24:34 [ main:4748 ] - [ DEBUG ] Creating shared instance of singleton bean 'transactionInterceptor'
+2016-06-23 10:24:34 [ main:4748 ] - [ DEBUG ] Creating instance of bean 'transactionInterceptor'
+2016-06-23 10:24:34 [ main:4748 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-06-23 10:24:34 [ main:4753 ] - [ DEBUG ] Returning cached instance of singleton bean 'transactionAttributeSource'
+2016-06-23 10:24:34 [ main:4758 ] - [ DEBUG ] Eagerly caching bean 'transactionInterceptor' to allow for resolving potential circular references
+2016-06-23 10:24:34 [ main:4762 ] - [ DEBUG ] Invoking afterPropertiesSet() on bean with name 'transactionInterceptor'
+2016-06-23 10:24:34 [ main:4762 ] - [ DEBUG ] Finished creating instance of bean 'transactionInterceptor'
+2016-06-23 10:24:34 [ main:4764 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+2016-06-23 10:24:34 [ main:4771 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:34 [ main:4774 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2016-06-23 10:24:34 [ main:4775 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2016-06-23 10:24:34 [ main:4775 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2016-06-23 10:24:34 [ main:4775 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2016-06-23 10:24:34 [ main:4778 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:34 [ main:4779 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2016-06-23 10:24:34 [ main:4779 ] - [ DEBUG ] Returning cached instance of singleton bean 'daoConfig'
+2016-06-23 10:24:34 [ main:4779 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2016-06-23 10:24:34 [ main:4780 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2016-06-23 10:24:34 [ main:4780 ] - [ DEBUG ] Creating shared instance of singleton bean 'userDao'
+2016-06-23 10:24:34 [ main:4781 ] - [ DEBUG ] Creating instance of bean 'userDao'
+2016-06-23 10:24:34 [ main:4782 ] - [ DEBUG ] Eagerly caching bean 'userDao' to allow for resolving potential circular references
+2016-06-23 10:24:34 [ main:4784 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:34 [ main:4785 ] - [ DEBUG ] Finished creating instance of bean 'userDao'
+2016-06-23 10:24:34 [ main:4785 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-06-23 10:24:34 [ main:4785 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:34 [ main:4785 ] - [ DEBUG ] Returning cached instance of singleton bean 'transactionAttributeSource'
+2016-06-23 10:24:34 [ main:4786 ] - [ DEBUG ] Returning cached instance of singleton bean 'transactionInterceptor'
+2016-06-23 10:24:34 [ main:4786 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2016-06-23 10:24:34 [ main:4787 ] - [ DEBUG ] Creating instance of bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2016-06-23 10:24:34 [ main:4787 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+2016-06-23 10:24:35 [ main:4794 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' to allow for resolving potential circular references
+2016-06-23 10:24:35 [ main:4796 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:35 [ main:4797 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2016-06-23 10:24:35 [ main:4798 ] - [ DEBUG ] Returning cached instance of singleton bean 'com.software.server.dao.base.DataSourceConfig'
+2016-06-23 10:24:35 [ main:4798 ] - [ DEBUG ] Returning cached instance of singleton bean 'dataSource'
+2016-06-23 10:24:35 [ main:4798 ] - [ DEBUG ] Returning cached instance of singleton bean 'propertyConfig'
+2016-06-23 10:24:35 [ main:4799 ] - [ DEBUG ] Returning cached instance of singleton bean 'sqlSessionFactory'
+2016-06-23 10:24:35 [ main:4799 ] - [ DEBUG ] Returning cached instance of singleton bean 'pageHelper'
+2016-06-23 10:24:35 [ main:4799 ] - [ DEBUG ] Creating shared instance of singleton bean 'transactionManager'
+2016-06-23 10:24:35 [ main:4799 ] - [ DEBUG ] Creating instance of bean 'transactionManager'
+2016-06-23 10:24:35 [ main:4800 ] - [ DEBUG ] Returning cached instance of singleton bean 'daoConfig'
+2016-06-23 10:24:35 [ main:4809 ] - [ DEBUG ] Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+2016-06-23 10:24:35 [ main:4814 ] - [ DEBUG ] Invoking afterPropertiesSet() on bean with name 'transactionManager'
+2016-06-23 10:24:35 [ main:4814 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:35 [ main:4816 ] - [ DEBUG ] Finished creating instance of bean 'transactionManager'
+2016-06-23 10:24:35 [ main:4817 ] - [ DEBUG ] Returning cached instance of singleton bean 'resourceMapper'
+2016-06-23 10:24:35 [ main:4817 ] - [ DEBUG ] Returning cached instance of singleton bean 'roleMapper'
+2016-06-23 10:24:35 [ main:4818 ] - [ DEBUG ] Returning cached instance of singleton bean 'roleResMapper'
+2016-06-23 10:24:35 [ main:4818 ] - [ DEBUG ] Returning cached instance of singleton bean 'userDeviceMapper'
+2016-06-23 10:24:35 [ main:4818 ] - [ DEBUG ] Returning cached instance of singleton bean 'userLoginMapper'
+2016-06-23 10:24:35 [ main:4819 ] - [ DEBUG ] Returning cached instance of singleton bean 'userMapper'
+2016-06-23 10:24:35 [ main:4819 ] - [ DEBUG ] Returning cached instance of singleton bean 'userRoleMapper'
+2016-06-23 10:24:35 [ main:4819 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2016-06-23 10:24:35 [ main:4820 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2016-06-23 10:24:35 [ main:4821 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2016-06-23 10:24:35 [ main:4925 ] - [ DEBUG ] Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@1a6bf15b]
+2016-06-23 10:24:35 [ main:4926 ] - [ DEBUG ] Returning cached instance of singleton bean 'lifecycleProcessor'
+2016-06-23 10:24:35 [ main:4930 ] - [ DEBUG ] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2016-06-23 10:24:35 [ main:4931 ] - [ DEBUG ] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2016-06-23 10:24:35 [ main:4931 ] - [ DEBUG ] Searching for key 'spring.liveBeansView.mbeanDomain' in [class path resource [config/database.properties]]
+2016-06-23 10:24:35 [ main:4932 ] - [ DEBUG ] Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2016-06-23 10:24:35 [ main:4936 ] - [ DEBUG ] Storing ApplicationContext in cache under key [[MergedContextConfiguration@1009946e testClass = UserDaoTest, locations = '{}', classes = '{class com.software.server.dao.base.DaoConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2016-06-23 10:24:35 [ main:4937 ] - [ DEBUG ] Spring test ApplicationContext cache statistics: [DefaultContextCache@633fb34 size = 1, parentContextCount = 0, hitCount = 0, missCount = 1]
+2016-06-23 10:24:35 [ main:4943 ] - [ DEBUG ] Processing injected element of bean 'com.software.server.dao.UserDaoTest': AutowiredFieldElement for private com.software.server.dao.mapper.UserMapper com.software.server.dao.UserDaoTest.userMapper
+2016-06-23 10:24:35 [ main:4945 ] - [ DEBUG ] Returning cached instance of singleton bean 'userMapper'
+2016-06-23 10:24:35 [ main:4953 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:35 [ main:4961 ] - [ DEBUG ] Autowiring by type from bean name 'com.software.server.dao.UserDaoTest' to bean named 'userMapper'
+2016-06-23 10:24:35 [ main:4962 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2016-06-23 10:24:35 [ main:4976 ] - [ DEBUG ] Before test method: context [DefaultTestContext@6a8ff0ca testClass = UserDaoTest, testInstance = com.software.server.dao.UserDaoTest@466db468, testMethod = testGetUserByMobile@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1009946e testClass = UserDaoTest, locations = '{}', classes = '{class com.software.server.dao.base.DaoConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2016-06-23 10:24:35 [ main:5001 ] - [ DEBUG ] Creating a new SqlSession
+2016-06-23 10:24:35 [ main:5020 ] - [ DEBUG ] SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1973f2f4] was not registered for synchronization because synchronization is not active
+2016-06-23 10:24:35 [ main:5038 ] - [ DEBUG ] Fetching JDBC Connection from DataSource
+2016-06-23 10:24:35 [ main:5043 ] - [ DEBUG ] JDBC Connection [com.mysql.jdbc.JDBC4Connection@fe33c37] will not be managed by Spring
+2016-06-23 10:24:35 [ main:5050 ] - [ DEBUG ] ==>  Preparing: SELECT T_ID,T_USER_NAME,T_NAME,T_SEX,T_QQ, T_WEBCHAT,T_BIRTHDAY,T_MOBILE, T_MOBILE_STATUS,T_EMAIL,T_EMAIL_STATUS, T_STATUS,T_REG_TIME, T_USER_PROPERTY,T_USER_TYPE,T_LOGIN_COUNT, T_LOGIN_TIME,T_LAST_LOGIN_TIME,T_LOGIN_IP, T_LOGIN_DEVICE_ID,T_PASSWORD, T_SALT,T_AVATAR,T_GRADE FROM T_USER WHERE T_MOBILE = ? 
+2016-06-23 10:24:35 [ main:5087 ] - [ DEBUG ] ==> Parameters: 13606603642(String)
+2016-06-23 10:24:35 [ main:5138 ] - [ DEBUG ] <==      Total: 1
+2016-06-23 10:24:35 [ main:5139 ] - [ DEBUG ] Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1973f2f4]
+2016-06-23 10:24:35 [ main:5140 ] - [ DEBUG ] Returning JDBC Connection to DataSource
+2016-06-23 10:24:35 [ main:5144 ] - [ DEBUG ] After test method: context [DefaultTestContext@6a8ff0ca testClass = UserDaoTest, testInstance = com.software.server.dao.UserDaoTest@466db468, testMethod = testGetUserByMobile@UserDaoTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1009946e testClass = UserDaoTest, locations = '{}', classes = '{class com.software.server.dao.base.DaoConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2016-06-23 10:24:35 [ main:5149 ] - [ DEBUG ] After test class: context [DefaultTestContext@6a8ff0ca testClass = UserDaoTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1009946e testClass = UserDaoTest, locations = '{}', classes = '{class com.software.server.dao.base.DaoConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+2016-06-23 10:24:35 [ Thread-1:5154 ] - [ INFO ] Closing org.springframework.context.support.GenericApplicationContext@7dfa0e30: startup date [Thu Jun 23 10:24:31 CST 2016]; root of context hierarchy
+2016-06-23 10:24:35 [ Thread-1:5156 ] - [ DEBUG ] Returning cached instance of singleton bean 'lifecycleProcessor'
+2016-06-23 10:24:35 [ Thread-1:5157 ] - [ DEBUG ] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3edcbc7b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,daoConfig,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,userDao,org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration,org.springframework.transaction.config.internalTransactionAdvisor,transactionAttributeSource,transactionInterceptor,org.springframework.transaction.config.internalTransactionalEventListenerFactory,com.software.server.dao.base.DataSourceConfig,dataSource,propertyConfig,sqlSessionFactory,pageHelper,transactionManager,resourceMapper,roleMapper,roleResMapper,userDeviceMapper,userLoginMapper,userMapper,userRoleMapper,org.springframework.aop.config.internalAutoProxyCreator]; root of factory hierarchy
+2016-06-23 10:24:35 [ Thread-1:5173 ] - [ DEBUG ] Retrieved dependent beans for bean 'userMapper': [com.software.server.dao.UserDaoTest]
+2016-06-23 10:24:35 [ Thread-1:5174 ] - [ DEBUG ] Invoking destroy method 'close' on bean with name 'dataSource'
+2016-06-23 10:24:35 [ Thread-1:5180 ] - [ INFO ] {dataSource-1} closed

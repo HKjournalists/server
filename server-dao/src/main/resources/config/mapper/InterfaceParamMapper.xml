@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.software.server.dao.mapper.InterfaceParamMapper">
+
+    <resultMap id="InterfaceParamResultMap" type="com.software.server.dao.model.InterfaceParamModel">
+        <id column="T_ID" property="id" jdbcType="INTEGER" />
+        <result column="T_INTERFACE_ID" property="interfaceId" />
+        <result column="T_EN_NAME" property="enName"/>
+        <result column="T_ZH_NAME" property="zhName"/>
+        <result column="T_PARAM_TYPE" property="type"/>
+        <result column="T_REQUIRE" property="require"/>
+        <result column="T_PARAM_DESC" property="desc"/>
+        <result column="T_PARAM_DEMO" property="demo"/>
+        <result column="T_IS_COMMON" property="isCommon"/>
+        <result column="T_CREATE_TIME" property="createTime"  javaType="java.util.Date" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询角色的字段-->
+    <sql id="BASE_QUERY_FIELDS">
+         T_ID,T_INTERFACE_ID,T_EN_NAME,T_ZH_NAME,
+         T_PARAM_TYPE,T_REQUIRE,T_PARAM_DESC,
+         T_PARAM_DEMO,T_IS_COMMON,T_CREATE_TIME
+    </sql>
+
+    <!--保存角色的字段-->
+    <sql id="BASE_INSERT_FIELDS">
+         T_INTERFACE_ID,T_EN_NAME,T_ZH_NAME,
+         T_PARAM_TYPE,T_REQUIRE,T_PARAM_DESC,
+         T_PARAM_DEMO,T_IS_COMMON,T_CREATE_TIME
+    </sql>
+
+    <!--更新语句-->
+    <sql id="BASE_UPDATE_SQL">
+        <set>
+            <if test="interfaceId!=null">
+                T_INTERFACE_ID = #{interfaceId,jdbcType=VARCHAR},
+            </if>
+            <if test="enName!=null and enName!=''">
+                T_EN_NAME = #{enName,jdbcType=VARCHAR},
+            </if>
+            <if test="zhName!=null and zhName!=''">
+                T_ZH_NAME = #{zhName,jdbcType=VARCHAR},
+            </if>
+            <if test="type!=null and type!=''">
+                T_PARAM_TYPE = #{type,jdbcType=VARCHAR},
+            </if>
+            <if test="require!=null and require!=''">
+                T_REQUIRE = #{require,jdbcType=VARCHAR},
+            </if>
+            <if test="desc!=null and desc!=''">
+                T_PARAM_DESC = #{desc,jdbcType=VARCHAR},
+            </if>
+            <if test="demo!=null and demo!=''">
+                T_PARAM_DEMO = #{demo,jdbcType=VARCHAR},
+            </if>
+            <if test="isCommon!=null and isCommon!=''">
+                T_IS_COMMON = #{isCommon,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime!=null">
+                T_CREATE_TIME = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+    </sql>
+
+    <!--表名-->
+    <sql id="tableN">T_REQ_PARAMETER</sql>
+
+    <!--根据ID查询接口参数-->
+    <select id="findById" resultMap="InterfaceParamResultMap" parameterType="long">
+         SELECT <include refid="BASE_QUERY_FIELDS"/>
+         FROM <include refid="tableN"/>
+         WHERE T_ID = #{id,jdbcType=BIGINT}
+    </select>
+
+    <!--根据接口ID查询接口参数-->
+    <select id="findByInterfaceId" resultMap="InterfaceParamResultMap" parameterType="long">
+        SELECT <include refid="BASE_QUERY_FIELDS"/>
+        FROM <include refid="tableN"/>
+        WHERE T_INTERFACE_ID = #{interfaceId,jdbcType=BIGINT}
+    </select>
+
+    <!--查询所以的公共参数-->
+    <select id="findCommons" resultMap="InterfaceParamResultMap">
+        SELECT <include refid="BASE_QUERY_FIELDS"/>
+        FROM <include refid="tableN"/>
+        WHERE T_IS_COMMON = '1'
+    </select>
+
+    <!--新增接口参数-->
+    <insert id="insert" parameterType="InterfaceParamModel" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO
+        <include refid="tableN"/>
+        (
+        <include refid="BASE_INSERT_FIELDS"/>
+        )
+        VALUES
+        (
+        #{interfaceId,jdbcType=BIGINT},
+        #{enName,jdbcType=VARCHAR},
+        #{zhName,jdbcType=VARCHAR},
+        #{type,jdbcType=VARCHAR},
+        #{require,jdbcType=VARCHAR},
+        #{desc,jdbcType=VARCHAR},
+        #{demo,jdbcType=VARCHAR},
+        #{isCommon,jdbcType=VARCHAR},
+        #{createTime,jdbcType=TIMESTAMP}
+        )
+    </insert>
+
+    <!--批量插入-->
+    <insert id="insertByBatch" parameterType="java.util.List">
+        INSERT INTO
+        <include refid="tableN"/>
+        (
+        <include refid="BASE_INSERT_FIELDS"/>
+        )
+        VALUES
+        <foreach collection="list" index="index" item="item" separator="," >
+            (
+            #{item.interfaceId,jdbcType=BIGINT},
+            #{item.enName,jdbcType=VARCHAR},
+            #{item.zhName,jdbcType=VARCHAR},
+            #{item.type,jdbcType=VARCHAR},
+            #{item.require,jdbcType=VARCHAR},
+            #{item.desc,jdbcType=VARCHAR},
+            #{item.demo,jdbcType=VARCHAR},
+            #{item.isCommon,jdbcType=VARCHAR},
+            #{item.createTime,jdbcType=TIMESTAMP}
+            )
+        </foreach>
+
+    </insert>
+
+    <!--删除参数-->
+    <delete id="deleteById" parameterType="long">
+        DELETE FROM <include refid="tableN"/> WHERE T_ID = #{id,jdbcType=BIGINT}
+    </delete>
+
+    <!--根据接口ID删除参数-->
+    <delete id="deleteByInterfaceId"  parameterType="long">
+        DELETE FROM <include refid="tableN"/> WHERE T_INTERFACE_ID = #{interfaceId,jdbcType=BIGINT}
+    </delete>
+
+    <!--更新接口参数信息-->
+    <update id="update" parameterType="InterfaceParamModel">
+        UPDATE <include refid="tableN"/>
+        <include refid="BASE_UPDATE_SQL"/>
+        WHERE T_ID = #{id,jdbcType=VARCHAR}
+    </update>
+
+
+
+</mapper>

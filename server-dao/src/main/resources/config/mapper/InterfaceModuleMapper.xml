@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.software.server.dao.mapper.InterfaceModuleMapper">
+
+    <resultMap id="InterfaceModuleResultMap" type="com.software.server.dao.model.InterfaceModuleModel">
+        <id column="T_ID" property="id" jdbcType="BIGINT" />
+        <result column="T_EN_NAME" property="enName" />
+        <result column="T_ZH_NAME" property="zhName"/>
+        <result column="T_CREATE_TIME" property="createTime" javaType="java.util.Date" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <!--查询接口的字段-->
+    <sql id="BASE_QUERY_FIELDS">
+         T_ID,T_EN_NAME,T_ZH_NAME,T_CREATE_TIME
+    </sql>
+
+    <!--保存接口的字段-->
+    <sql id="BASE_INSERT_FIELDS">
+         T_EN_NAME,T_ZH_NAME,T_CREATE_TIME
+    </sql>
+
+    <!--更新语句-->
+    <sql id="BASE_UPDATE_SQL">
+        <set>
+            <if test="enName!=null and enName!=''">
+                T_EN_NAME = #{enName,jdbcType=VARCHAR},
+            </if>
+            <if test="zhName!=null and zhName!=''">
+                T_ZH_NAME = #{zhName,jdbcType=VARCHAR},
+            </if>
+            <if test="createTime!=null">
+                T_CREATE_TIME = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+    </sql>
+
+    <!--表名-->
+    <sql id="tableN">T_INTERFACE_MODULE</sql>
+
+    <!--查询所有的接口-->
+    <select id="findAll" resultMap="InterfaceModuleResultMap">
+         SELECT <include refid="BASE_QUERY_FIELDS"/>
+         FROM <include refid="tableN"/>
+    </select>
+
+    <!--根据模块的英文名称查询-->
+    <select id="findByEnName" resultMap="InterfaceModuleResultMap" parameterType="String">
+        SELECT <include refid="BASE_QUERY_FIELDS"/>
+        FROM <include refid="tableN"/>
+        WHERE T_EN_NAME = #{enName,jdbcType=VARCHAR}
+    </select>
+
+    <!--根据ID查询-->
+    <select id="findById" resultMap="InterfaceModuleResultMap" parameterType="long">
+        SELECT <include refid="BASE_QUERY_FIELDS"/>
+        FROM <include refid="tableN"/>
+        WHERE T_ID = #{id,jdbcType=BIGINT}
+    </select>
+
+    <!--新增-->
+    <insert id="insert" parameterType="InterfaceModuleModel" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO<include refid="tableN"/>
+        (
+        <include refid="BASE_INSERT_FIELDS"/>
+        )
+        VALUES
+        (
+        #{enName,jdbcType=VARCHAR},
+        #{zhName,jdbcType=VARCHAR},
+        #{createTime,jdbcType=TIMESTAMP}
+        )
+    </insert>
+
+    <!--批量插入-->
+    <insert id="insertByBatch" parameterType="java.util.List">
+        INSERT INTO
+        <include refid="tableN"/>
+        (
+        <include refid="BASE_INSERT_FIELDS"/>
+        )
+        VALUES
+        <foreach collection="list" index="index" item="item" separator="," >
+            (
+            #{item.enName,jdbcType=VARCHAR},
+            #{item.zhName,jdbcType=VARCHAR},
+            #{item.createTime,jdbcType=TIMESTAMP}
+            )
+        </foreach>
+
+    </insert>
+
+    <!--删除接口-->
+    <delete id="deleteById" parameterType="long">
+        DELETE FROM <include refid="tableN"/> WHERE T_ID = #{id,jdbcType=BIGINT}
+    </delete>
+
+    <!--更新接口信息-->
+    <update id="update" parameterType="InterfaceModuleModel">
+        UPDATE <include refid="tableN"/>
+        <include refid="BASE_UPDATE_SQL"/>
+        WHERE T_ID = #{id,jdbcType=VARCHAR}
+    </update>
+
+    <!--根据英文名更新-->
+    <update id="updateByEnName" parameterType="InterfaceModuleModel">
+        UPDATE <include refid="tableN"/>
+        <include refid="BASE_UPDATE_SQL"/>
+        WHERE T_EN_NAME = #{enName,jdbcType=VARCHAR}
+    </update>
+
+</mapper>

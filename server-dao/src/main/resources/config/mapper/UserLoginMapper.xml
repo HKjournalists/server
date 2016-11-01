@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.software.server.dao.mapper.UserLoginMapper">
+
+    <!--map影射-->
+    <resultMap id="UserLoginMap" type="com.software.server.dao.model.UserLoginModel">
+        <id column="T_ID" property="id" />
+        <result column="T_LOGIN_TYPE" property="loginType"/>
+        <result column="T_LOGIN_NAME" property="loginName"/>
+        <result column="T_USER_ID" property="userId" />
+    </resultMap>
+
+    <!--查询基本字段-->
+    <sql id="BASE_QUERY_FIELDS">
+         T_ID,
+         T_LOGIN_TYPE,
+         T_LOGIN_NAME,
+         T_USER_ID
+    </sql>
+
+    <!--查询基本字段-->
+    <sql id="BASE_INSERT_FIELDS">
+         T_LOGIN_TYPE,
+         T_LOGIN_NAME,
+         T_USER_ID
+    </sql>
+
+    <!--表名-->
+    <sql id="TABLE_NAME">T_USER_LOGIN</sql>
+
+
+    <!--更新语句-->
+    <sql id="BASE_UPDATE_SQL">
+        <set>
+            <if test="loginType!=null and loginType!=''">
+                T_LOGIN_TYPE = #{loginType,jdbcType=VARCHAR},
+            </if>
+            <if test="loginName!=null and loginName!=''">
+                T_LOGIN_NAME = #{loginName,jdbcType=VARCHAR},
+            </if>
+            <if test="userId!=null">
+                T_USER_ID = #{userId,jdbcType=BIGINT},
+            </if>
+        </set>
+    </sql>
+
+    <!--查询用户信息-->
+    <select id="get" resultMap="UserLoginMap" parameterType="int">
+        SELECT <include refid="BASE_QUERY_FIELDS"/>
+        FROM <include refid="TABLE_NAME"/>
+        WHERE T_ID = #{id,jdbcType=INTEGER}
+    </select>
+
+    <!--保存用户信息-->
+    <insert id="insert" parameterType="UserLoginModel" useGeneratedKeys="true" keyProperty="id">
+       INSERT INTO<include refid="TABLE_NAME"/>
+        (
+          <include refid="BASE_INSERT_FIELDS"/>
+        )
+        VALUES
+        (
+           #{loginType,jdbcType=VARCHAR},
+           #{loginName,jdbcType=VARCHAR},
+           #{userId,jdbcType=BIGINT}
+        )
+    </insert>
+
+    <!--根据用户ID和登录类型更新登录信息-->
+    <update id="updateByUserIDAndLoginType" parameterType="UserLoginModel">
+       UPDATE <include refid="TABLE_NAME"/>
+        <include refid="BASE_UPDATE_SQL"/>
+        WHERE T_USER_ID = #{userId,jdbcType=BIGINT} AND T_LOGIN_TYPE = #{loginType,jdbcType=VARCHAR}
+    </update>
+
+
+    <!--根据用户ID和登录类型查询登录信息-->
+    <select id="getByUserIDAndLoginType" resultMap="UserLoginMap" parameterType="String">
+        SELECT <include refid="BASE_QUERY_FIELDS"/>
+        FROM <include refid="TABLE_NAME"/>
+        WHERE T_USER_ID = #{userId,jdbcType=BIGINT} AND T_LOGIN_TYPE = #{loginType,jdbcType=VARCHAR}
+    </select>
+    
+    <!--根据登录名查询用户的登录信息-->
+    <select id="getByLoginName" parameterType="String" resultMap="UserLoginMap">
+        SELECT <include refid="BASE_QUERY_FIELDS"/>
+        FROM <include refid="TABLE_NAME"/>
+        WHERE T_LOGIN_NAME = #{loginName,jdbcType=VARCHAR}
+    </select>
+
+</mapper>
